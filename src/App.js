@@ -1,15 +1,16 @@
 // import Stars from "./Drawings/Stars";
-const cubed = (x) => {return x*x*x;}
+const cubed = x => {
+  return x * x * x;
+};
 
 const App = () => {
   return (
-    <div className='tc'>
-      <h1>Hello World</h1>
-      <p>What're you doing?</p>
-      <p>This actually worked!</p>
-      <p>How about this? {cubed(20)}</p>
+    <div className="tc">
+      <h1 className="bg-light-black dib br3 pa2 ma2 grow bw2 shadow-5">
+        Welcome!
+      </h1>
     </div>
   );
-}
+};
 
 export default App;
