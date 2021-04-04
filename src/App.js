@@ -1,9 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import Stars from "./Drawings/Stars";
+import "./App.css";
 
 function App() {
   return (
-    <div>Hello World :D </div>
+    <div className='tc'>
+      <h1>Hello World</h1>
+    </div>
   );
 }
 
