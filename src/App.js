@@ -1,6 +1,4 @@
 // import Stars from "./Drawings/Stars";
-import "./App.css";
-
 function App() {
   return (
     <div className='tc'>
