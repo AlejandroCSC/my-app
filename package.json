@@ -22,9 +22,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "add": "git add .;git commit -m 'Instant Commit';npm run git push",
+    "add": "git add .",
     "commit": "git commit -m 'Instant Commit'",
-    "push": "npm run git push"
+    "push": "git push"
   },
   "eslintConfig": {
     "extends": [
