@@ -24,7 +24,7 @@
     "eject": "react-scripts eject",
     "add": "git add .",
     "commit": "git commit -m 'Instant Commit'",
-    "push": "git push"
+    "push": "npm run deploy npm run git push"
   },
   "eslintConfig": {
     "extends": [
