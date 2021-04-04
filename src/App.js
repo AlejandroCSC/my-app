@@ -1,5 +1,5 @@
 // import Stars from "./Drawings/Stars";
-function App() {
+const App = () => {
   return (
     <div className='tc'>
       <h1>Hello World</h1>
