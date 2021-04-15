@@ -3,7 +3,5 @@ import sanityClient from "../client";
 import { useParams } from "react-router-dom";
 
 export default function SinglePost() {
-  return(
-
-  )
+  return <div>Hello</div>;
 }
