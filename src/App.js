@@ -13,10 +13,10 @@ const App = () => {
       <Switch>
         <Route component={Home} path='/portfolio' exact />
         <Route component={Home} path='/' exact />
-        <Route component={About} path='portfolio/about' />
-        <Route component={SinglePost} path='portfolio/post/:slug' />
-        <Route component={Post} path='portfolio/post' />
-        <Route component={Project} path='portfolio/project' />
+        <Route component={About} path='/about' />
+        <Route component={SinglePost} path='/post/:slug' />
+        <Route component={Post} path='/post' />
+        <Route component={Project} path='/project' />
       </Switch>
     </BrowserRouter>
   );
