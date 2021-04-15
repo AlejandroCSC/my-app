@@ -11,11 +11,12 @@ const App = () => {
     <BrowserRouter>
       <NavBar></NavBar>
       <Switch>
+        <Route component={Home} path='/portfolio' exact />
         <Route component={Home} path='/' exact />
-        <Route component={About} path='/about' />
-        <Route component={SinglePost} path='/post/:slug' />
-        <Route component={Post} path='/post' />
-        <Route component={Project} path='/project' />
+        <Route component={About} path='portfolio/about' />
+        <Route component={SinglePost} path='portfolio/post/:slug' />
+        <Route component={Post} path='portfolio/post' />
+        <Route component={Project} path='portfolio/project' />
       </Switch>
     </BrowserRouter>
   );
