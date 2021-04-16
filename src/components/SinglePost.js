@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import sanityClient from "../client";
 import { useParams } from "react-router-dom";
+import imageUrlBuilder from "@sanity/image-url";
+import BlockContent from "@sanity/block-content-to-react";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -8,7 +10,7 @@ function urlFor(source) {
 }
 export default function SinglePost() {
   const [singlePost, setSinglePost] = useState(null);
-  const { slug } = useParam();
+  const { slug } = useParams();
 
   useEffect(() => {
     sanityClient
@@ -55,9 +57,20 @@ export default function SinglePost() {
               </div>
             </div>
           </div>
-          <img src={singlePost.mainImage.asset.url} />
+          <img
+            src={singlePost.mainImage.asset.url}
+            alt={singlePost.title}
+            className='w-full object-cover rounded-t '
+            style={{ height: "400px" }}
+          />
         </header>
-        <div>BLOCK CONTENT</div>
+        <div className='px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full'>
+          <BlockContent
+            blocks={singlePost.body}
+            projectId='u61z2vuh'
+            dataset='production'
+          />
+        </div>
       </article>
     </main>
   );
