@@ -5,5 +5,6 @@ import { useParams } from "react-router-dom";
 export default function SinglePost() {
   const [singlePost, setSinglePost] = useState(null);
   const { slug } = useParam();
+
   return <h1>Hello</h1>;
 }
