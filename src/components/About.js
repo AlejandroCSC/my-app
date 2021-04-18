@@ -26,7 +26,8 @@ export default function About() {
 
   if (!author) return <div>Loading...</div>;
   return (
-    <main className='relative'>
+    //className='relative'
+    <main>
       <img
         src={image}
         alt='alan-veas-unsplash'
