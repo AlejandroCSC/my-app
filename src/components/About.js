@@ -30,7 +30,7 @@ export default function About() {
       <img
         src={image}
         alt='alan-veas-unsplash'
-        className='absolute w-full h-full'
+        className='absolute object-cover w-full h-full'
       />
       <div className='p-10 lg:pt-48 container mx-auto relative'>
         <section className='bg-blue-800 rounded-lg shadow-2xl lg:flex p-20'>
