@@ -45,6 +45,13 @@ export default function NavBar() {
             fgColor='#fff'
             style={{ height: 35, width: 35 }}
           />
+          <SocialIcon
+            url='https://www.linkedin.com/in/alejandro-blanco-b2b2b3210/'
+            className='mr-4'
+            target='_blank'
+            fgColor='#fff'
+            style={{ height: 35, width: 35 }}
+          />
         </div>
       </div>
     </header>
