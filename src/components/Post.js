@@ -36,10 +36,7 @@ export default function Post() {
           {postData &&
             postData.map((post, index) => (
               <article>
-                <Link
-                  to={"portfolio/post/" + post.slug.current}
-                  key={post.slug.current}
-                >
+                <Link to={"post/" + post.slug.current} key={post.slug.current}>
                   <span
                     className='block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-blue-400'
                     key={index}
